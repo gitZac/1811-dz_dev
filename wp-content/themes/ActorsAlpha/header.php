@@ -43,8 +43,9 @@
 
                 <div class="main-nav__logo-container">
                     
-                    <a href="http://localhost:8888/ztorg_v5.1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/digitalzac.com_logo2.png" alt="digitalzac.com -- Custom web design, content writing and SEO." class="main-nav__logo-image"></a> 
-
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/digitalzac.com_logo2.png" alt="digitalzac.com -- Custom web design, content writing and SEO." class="main-nav__logo-image">
+                    </a> 
                     <div class="main-nav__mobile-icon">
                         <a href="#" class="main-nav__burgernav"><i class="fa fa-bars"></i></a>
                     </div>

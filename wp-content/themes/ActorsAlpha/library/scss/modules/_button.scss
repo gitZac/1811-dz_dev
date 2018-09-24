@@ -17,26 +17,40 @@
 	text-transform:uppercase;	
     border-radius: .2rem;
     -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
     
+
+    
     &--primary{
-        border:2px solid $colorSecondary;
+        border:.5px solid $colorSecondary;
         background-color:transparent;
         color:#fff;
         font-weight:bold;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  
 
+        -webkit-transition: background-color 0.4s, color 0.4s;  
+
         transition: background-color 0.4s, color 0.4s;
+        -webkit-transition-property: background-color, color;
         transition-property: background-color, color;
+        -webkit-transition-duration: 0.4s, 0.4s;
         transition-duration: 0.4s, 0.4s;
+        -webkit-transition-timing-function: initial, initial;
         transition-timing-function: initial, initial;
+        -webkit-transition-delay: initial, initial;
         transition-delay: initial, initial;
+        
+        @include respond(tab-port){
+            background-color: rgba(239, 62, 54, 0.55);
+            border:.5px solid $colorSecondary;
+            color:#fff;
+            text-shadow: none;
+        }
     }
     
     &--primary:hover{
         color:#fff;
-        border:2px solid $colorSecondary;
+        border:.5px solid $colorSecondary;
         background-color:$colorSecondary;
     }
     
@@ -46,11 +60,15 @@
         color:#fff;
         font-weight:bold;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  
-
+        -webkit-transition: background-color 0.4s, color 0.4s;  
         transition: background-color 0.4s, color 0.4s;
+        -webkit-transition-property: background-color, color;
         transition-property: background-color, color;
+        -webkit-transition-duration: 0.4s, 0.4s;
         transition-duration: 0.4s, 0.4s;
+        -webkit-transition-timing-function: initial, initial;
         transition-timing-function: initial, initial;
+        -webkit-transition-delay: initial, initial;
         transition-delay: initial, initial;
     }
         
@@ -67,10 +85,16 @@
         font-weight:bold;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  
 
+        -webkit-transition: background-color 0.4s, color 0.4s;  
+
         transition: background-color 0.4s, color 0.4s;
+        -webkit-transition-property: background-color, color;
         transition-property: background-color, color;
+        -webkit-transition-duration: 0.4s, 0.4s;
         transition-duration: 0.4s, 0.4s;
+        -webkit-transition-timing-function: initial, initial;
         transition-timing-function: initial, initial;
+        -webkit-transition-delay: initial, initial;
         transition-delay: initial, initial;
     }
         
@@ -85,10 +109,16 @@
         font-weight:bold;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  
 
+        -webkit-transition: background-color 0.4s, color 0.4s;  
+
         transition: background-color 0.4s, color 0.4s;
+        -webkit-transition-property: background-color, color;
         transition-property: background-color, color;
+        -webkit-transition-duration: 0.4s, 0.4s;
         transition-duration: 0.4s, 0.4s;
+        -webkit-transition-timing-function: initial, initial;
         transition-timing-function: initial, initial;
+        -webkit-transition-delay: initial, initial;
         transition-delay: initial, initial;
     }
         
@@ -116,7 +146,7 @@
         
     &--darktext{
         color:#333;
-        text-shadow: none;  
+        text-shadow: none;
     }
         
     &--lighttext{
@@ -136,11 +166,10 @@
         display: inline-block;
         border-bottom: 1px solid $colorPrimary;
         -webkit-transition: all .2s;
-        transition: all .2s; 
+        transition: all .2s;
     }
         
     &__body-text:hover{
-
         background-color: $colorPrimary;
         color: #fff;
         -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);

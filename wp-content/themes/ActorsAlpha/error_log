@@ -1,0 +1,2 @@
+[14-Sep-2018 18:03:29 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/digiikzj/public_html/wp-content/themes/ActorsAlpha/index.php on line 1
+[14-Sep-2018 18:27:08 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/digiikzj/public_html/wp-content/themes/ActorsAlpha/index.php on line 1
