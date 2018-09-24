@@ -16,8 +16,9 @@
         </div>
 
     <?php endif; ?>
+
     <!-- END PROJECT TYPE LIST -->
 
-    <?php the_content(); ?>
+    <?php the_field('case_study'); ?>
 
 </section>
