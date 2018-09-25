@@ -46,7 +46,6 @@
         
         @include respond(tab-port){
             display: none;
-//            display:block;
             padding: 0 2rem;
             border-radius: .2rem;
         }
@@ -107,7 +106,7 @@
 }
 
 .current-menu-item{
-    border-bottom: 3px solid $colorPrimary;
+    border-bottom: 2px solid $colorPrimary;
 }
 
 .fa-facebook-official:hover{

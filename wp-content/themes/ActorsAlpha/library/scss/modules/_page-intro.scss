@@ -8,9 +8,37 @@
     &__text-box{
         padding:0 3.5rem;
     }
-    
+
     &__text-box--blog{
         padding:3.5rem 3.5rem;
+
+        //Styles for WYSIWYG Editor
+        h1,h2,h3,h4,h5{
+            max-width:96rem;
+            margin:0 auto;
+        }
+
+        h1{
+            font-size: 6.5rem;
+        }
+        
+        h2{
+            font-size: 4rem;
+            text-align: center;
+        }
+        
+        h3{
+            font-size: 2.5rem;
+            padding-top: 4rem;
+        }
+        
+        h4{
+            font-size: 2rem;
+        }
+        
+        h5{
+            font-size: 1.6rem;
+        }
     }
     
     &__text-box p, &__text-box ul{
@@ -18,7 +46,6 @@
         padding-top: 2rem;
         max-width:96rem;
         margin:0 auto;
-        list-style: circle;
     }
     
     &__text-box ul{

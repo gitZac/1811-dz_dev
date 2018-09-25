@@ -3,6 +3,8 @@
     <div class="hero__content hero__content--blog">
 
         <h1 class="hero__title hero__title--blog e-fade-in-top"><?php the_title(); ?></h1>
+
+        <p class="hero__blog-subtitle e-fade-in-bottom"><span>Clean, simple designs in WordPress or Wherever.</span></p>
         
     </div>
 

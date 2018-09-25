@@ -87,10 +87,11 @@
     &__title:after{    
         content: "";
         display: block;
-        height: 3px;
+        height: 2px;
         width: 30%;
         background-color: $colorSecondary;
         margin-top: 1rem;
+        border-radius: 2rem;
         position: absolute;
         left:50%;
         -webkit-transform: translate(-50%,-50%);
