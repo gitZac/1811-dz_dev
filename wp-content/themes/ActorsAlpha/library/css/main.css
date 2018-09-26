@@ -1340,13 +1340,6 @@ div.wpcf7 input, div.wpcf7 textarea {
   margin: 0 auto;
   max-width: 50%;
 }
-.hero__blog-subtitle span {
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-  padding: 0.5rem 2.5rem;
-  line-height: 4rem;
-  background-image: linear-gradient(to right bottom, rgba(239, 62, 54, .85), rgba(239, 62, 54, .55));
-}
 .hero__text {
   font-size: 2.2rem;
   max-width: 30%;
@@ -1357,12 +1350,6 @@ div.wpcf7 input, div.wpcf7 textarea {
     max-width: 55%;
     font-size: 1.8rem;
   }
-}
-.hero__text--span {
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-  padding: 0.2rem 1.5rem;
-  background-image: linear-gradient(to right bottom, rgba(239, 62, 54, .85), rgba(239, 62, 54, .55));
 }
 .logo {
   text-align: center;
@@ -1525,6 +1512,7 @@ div.wpcf7 input, div.wpcf7 textarea {
 }
 .page-intro__text-box ul {
   padding-left: 5rem;
+  list-style: disc;
 }
 .page-intro__text-box li {
   line-height: 145%;

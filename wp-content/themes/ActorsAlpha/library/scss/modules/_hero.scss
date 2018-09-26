@@ -75,14 +75,14 @@
         margin:0 auto;
         max-width: 50%;
 
-        span{
-            box-decoration-break: clone;
-            -webkit-box-decoration-break: clone;
+        // span{
+        //     box-decoration-break: clone;
+        //     -webkit-box-decoration-break: clone;
     
-            padding:.5rem 2.5rem;
-            line-height: 4rem;
-            background-image: linear-gradient(to right bottom, rgba($colorSecondary, .85), rgba($colorSecondary, .55));
-        }
+        //     padding:.5rem 2.5rem;
+        //     line-height: 4rem;
+        //     background-image: linear-gradient(to right bottom, rgba($colorSecondary, .85), rgba($colorSecondary, .55));
+        // }
     }
     
     &__text{
@@ -93,15 +93,6 @@
         @include respond(phone-land){
             max-width: 55%;
             font-size: 1.8rem;
-        }
-        
-    }
-    
-    &__text--span{
-        box-decoration-break: clone;
-        -webkit-box-decoration-break: clone;
-
-        padding:.2rem 1.5rem;
-        background-image: linear-gradient(to right bottom, rgba($colorSecondary, .85), rgba($colorSecondary, .55));
+        }    
     }
 }
