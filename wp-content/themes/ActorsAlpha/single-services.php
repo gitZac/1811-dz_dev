@@ -6,7 +6,7 @@
     
     <section class="page-intro__text-box page-intro__text-box--blog e-fade-in-bottom">
     
-        <?php the_content(); ?>
+        <?php the_content(); ?> 
 
     </section>
 
