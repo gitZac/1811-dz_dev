@@ -57,16 +57,10 @@
         text-align: center;
         max-width: 100%;
         font-size: 6.5rem;
-        
-    //    &::after{
-    //        content: "";
-    //        display: block;
-    //        height: 2px;
-    //        border-radius: 2rem;
-    //        width: 27rem;
-    //        background: $colorSecondary;
-    //        margin:0 auto;
-    //    }
+
+        @include respond(phone){
+            font-size: 5.5rem;
+        }
     }
 
     &__blog-subtitle{
@@ -75,14 +69,9 @@
         margin:0 auto;
         max-width: 50%;
 
-        // span{
-        //     box-decoration-break: clone;
-        //     -webkit-box-decoration-break: clone;
-    
-        //     padding:.5rem 2.5rem;
-        //     line-height: 4rem;
-        //     background-image: linear-gradient(to right bottom, rgba($colorSecondary, .85), rgba($colorSecondary, .55));
-        // }
+        @include respond(phone){
+            max-width: 75%;
+        }
     }
     
     &__text{

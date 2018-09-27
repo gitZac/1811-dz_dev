@@ -168,6 +168,10 @@
         -webkit-transition: all .2s;
         transition: all .2s;
         padding: 0 .5rem;
+
+        @include respond(phone){
+            border-bottom: none;
+        }
     }
         
     &__body-text:hover{
