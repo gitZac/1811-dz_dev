@@ -19,8 +19,6 @@
     -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
     
-
-    
     &--primary{
         border:.5px solid $colorSecondary;
         background-color:transparent;
@@ -157,7 +155,14 @@
         color: #fff;
         font-size:1.8rem;
         display: inline-block;
-        padding: 3px; 
+        padding: 3px;
+        
+        @include respond(tab-landscape){
+            text-transform:uppercase;
+            font-size: 2.2rem;
+            color:$colorSecondary;
+            font-weight: bold;
+        }
     }
         
     &__body-text{

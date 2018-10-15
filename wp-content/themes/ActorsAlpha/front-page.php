@@ -12,7 +12,7 @@
         
         <div class="l-wrapper">
            
-            <?php get_template_part('template-parts/allabout'); ?>
+            <?php get_template_part('template-parts/allabout-no-title'); ?>
             
         </div>
 

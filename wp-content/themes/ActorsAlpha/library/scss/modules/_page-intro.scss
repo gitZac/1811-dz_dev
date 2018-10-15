@@ -9,6 +9,11 @@
         padding:0 3.5rem;
     }
 
+    &__text-box img{
+        -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+    }
+
     &__text-box--blog{
         padding:3.5rem 3.5rem;
 

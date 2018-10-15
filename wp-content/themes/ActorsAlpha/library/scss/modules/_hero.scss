@@ -17,6 +17,10 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+
+        @include respond(phone-land){
+            background-attachment: scroll;
+        }
     }
     
     &__content{
