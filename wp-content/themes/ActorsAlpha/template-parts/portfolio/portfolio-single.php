@@ -1,6 +1,7 @@
 <section class="page-intro__text-box page-intro__text-box--blog e-fade-in-bottom">
 
     <!-- PROJECT TYPE LIST -->
+    
     <?php 
 
         $servs = get_field('services');    

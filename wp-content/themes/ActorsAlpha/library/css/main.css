@@ -541,6 +541,9 @@ ol, ul {
 .background-fade {
   background-color: #aac2ce;
 }
+.e-opacity0 {
+  opacity: 0;
+}
 .e-overlay-fade {
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
@@ -965,10 +968,11 @@ a img.aligncenter {
 }
 @media (max-width: 75em) {
   .btn--text {
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    color: #ef3e36;
-    font-weight: bold;
+    background-color: #ef3e36;
+    border: 0.5px solid #ef3e36;
+    color: #fff;
+    text-shadow: none;
+    padding: 1rem;
   }
 }
 .btn__body-text {
@@ -1311,6 +1315,11 @@ div.wpcf7 input, div.wpcf7 textarea {
   -o-background-size: cover;
   background-size: cover;
 }
+@media (max-width: 43.75em) {
+  .hero--blog {
+    background-attachment: scroll;
+  }
+}
 .hero__content {
   position: absolute;
   top: 50%;
@@ -1618,6 +1627,9 @@ div.wpcf7 input, div.wpcf7 textarea {
   grid-row: 1 / span 1;
   padding-right: 1rem;
 }
+.port__logo img {
+  max-height: 7rem;
+}
 .port__title {
   grid-column: 2 / span 3;
   grid-row: 3 / span 2;
@@ -1704,6 +1716,7 @@ div.wpcf7 input, div.wpcf7 textarea {
     padding: 0 3rem;
     grid-column: 1 / span 3;
     grid-row: 4 / span 1;
+    margin-top: 1rem;
   }
 }
 .port__card:hover .port__btn-container {
@@ -2135,9 +2148,6 @@ footer .l-grid1-3 {
 .section {
   overflow: hidden;
 }
-.section:last-child {
-  margin-bottom: 0;
-}
 .section__image {
   margin-bottom: 3rem;
 }
@@ -2153,6 +2163,19 @@ footer .l-grid1-3 {
 }
 .section__title--secondary {
   margin: 4rem 0;
+}
+.section--front {
+  margin-bottom: 0rem;
+}
+.section--front:not(:first-child):after {
+  content: "";
+  display: block;
+  height: 1px;
+  border-radius: 2rem;
+  width: 100%;
+  background-color: #f7f7f7;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .sidebar {
   margin: 0 auto;
