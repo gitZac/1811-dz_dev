@@ -1,13 +1,11 @@
-
 <?php $args = array(
-        'post_type' => 'hero',							
-        'posts_per_page' => 1,							
-        'orderby' => 'title',
-        'order' => 'ASC',
-    ); ?>
+    'post_type' => 'hero',							
+    'posts_per_page' => 1,							
+    'orderby' => 'title',
+    'order' => 'ASC',
+); ?>
 
 <?php $hero = new WP_Query($args); while($hero->have_posts()): $hero->the_post(); ?>
-
 
     <div style="background-image:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url(<?php echo get_the_post_thumbnail_url(); ?>);" class="hero hero--vhbg">
 

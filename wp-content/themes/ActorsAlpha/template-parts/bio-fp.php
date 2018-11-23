@@ -7,7 +7,7 @@
             'order' => 'ASC',
         ); ?>
 
-    <?php $hero = new WP_Query($args); while($hero->have_posts()): $hero->the_post(); ?>
+    <?php $bio = new WP_Query($args); while($bio->have_posts()): $bio->the_post(); ?>
 
     <div class="bio">
         
